@@ -749,11 +749,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: aa8c9ca1-2485-470e-9ad4-9b3614f42c20
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: stickman-game
+  organizationId: cris_23
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 

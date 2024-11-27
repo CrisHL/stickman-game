@@ -36,40 +36,6 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
-   
-
-
-
-    public void SubMenu()
-    {
-        if (subMenu.activeInHierarchy == false) 
-        {
-            tTitle.text = EventSystem.current.currentSelectedGameObject.name; 
-            if (tTitle.text == "info")
-            {
-                smcredits.SetActive(true);
-            }
-            else
-            {
-                smsettings.SetActive(true);
-            }
-            subMenu.SetActive(true);
-        }
-        else
-        {
-            if (tTitle.text == "info")
-            {
-                smcredits.SetActive(false);
-            }
-            else
-            {
-                smsettings.SetActive(false);
-            }
-            subMenu.SetActive(false);
-        }
-    }
-   
-    
     
     public void ExitGame()
     {

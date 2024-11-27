@@ -5,15 +5,17 @@ using UnityEngine.UI;
 
 public class ItemCollector : MonoBehaviour
 {
-    private int pumpkins = 0;
-    public Text pumpkinText;
+    private int coins = 0;
+    public Text coinsText;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("pumpkin"))
+        if (collision.gameObject.CompareTag("coin"))
         {
             Destroy(collision.gameObject);
-            pumpkins++;
-            pumpkinText.text = "Pumpkins: " + pumpkins;
+            Debug.Log("Moneda tomada");
+            coins++;
+            coinsText.text = "Coins: " + coins;
         }
     }
 }

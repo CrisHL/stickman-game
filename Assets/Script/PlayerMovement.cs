@@ -32,28 +32,23 @@ public class PlayerMovement : MonoBehaviour
     {
         MovementState state;
 
-        // untuk gerak kanan kiri
         float dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * moveSpeed ,rb.velocity.y);
 
-        // untuk lompat
         if(Input.GetButtonDown("Jump") && IsGrounded())
         {
             jumpSoundEffect.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
-        // untuk animasi diam ke lari or sebaliknya
         if(dirX > 0f)
         {
             state = MovementState.lari;
-            // untuk bisa balik jadi hadap kanan
             sprite.flipX = false;
         }
         else if(dirX < 0f)
         {
             state = MovementState.lari;
-            // untuk bisa balik jadi hadap kiri
             sprite.flipX = true;
         }
         else

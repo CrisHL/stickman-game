@@ -20,8 +20,8 @@ public class InGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      //if(Input.GetKey(KeyCode.Escape)){
-        //SceneManager.LoadScene(0);}
+      if(Input.GetKey(KeyCode.Escape)){
+        SceneManager.LoadScene(0);}
     }
 
     public void Pause()
